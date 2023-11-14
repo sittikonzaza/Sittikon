@@ -1,63 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>from</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form</title>
 </head>
 <body>
-    <h1>input from</h1>
-<from action="#">
-<table>
+  <h1>Input Form</h1>
+  <form action="submit.php" method="post">
+    <table>
     <tr>
-<td><label for="username">useranme </label></td>
-<td><input type="email" naem="email" id="email"></td>
-</tr>
-<tr>
-<br>
-<td><label for="password">password</label></td>
-<td><input type="password" name="password" id="password"></td>
-</tr>
-<tr>
-<td><label for="city">city of Employment</label></td>
-<td><input type="text" name="city" id="city"></td>
-</tr>
-<tr>
-    <td><label for="web">web server: </label></td>
-    <td>
+      <td><label for="username">Username: </label></td>
+      <td><input type="email" name="email" id="email"></td>
+    </tr>
+    <tr>
+      <td><label for="password">Password: </label></td>
+      <td><input type="password" name="password" id="password"></td>
+    </tr>
+    <tr>
+      <td><label for="City">City of Employment: </label></td>
+      <td><input type="text" name="city" id="city"></td>
+    </tr>
+    <tr>
+      <td><label for="web">Web server: </label></td>
+      <td>
         <select name="web" id="web">
-            <option value="blank">---Choose a server---</option>
-            <option value="google">google</option>
-            <option value="facebook">facebook</option>
-            <option value="twitter">twitter</option>
+          <option value="blank">---Choose a server---</option>
+          <option value="google">google</option>
+          <option value="facebook">facebook</option>
+          <option value="twitter">twitter</option>
         </select>
-    </td>
-</tr>
-<tr>
-<td><label for="role">Please specify your role</label></td>
-<td>
-<input type="radio" name="role" name="admin">admin
-<input type="radio" name="role" name="engineer">enginerr
-<input type="radio" name="role" name="manager">manager    
-<input type="radio" name="role" name="Guest">Gust
-</td>
-</tr>
-<tr>
-<td><label for="sign">signle Sign-on to the following: </label></td>
-<td>
-<input type="checkbox" name="sign" id="mail">Mail <br>
-<input type="checkbox" name="sign" id="payroll">payroll <br>
-<input type="checkbox" name="sign" id="selfservive">self-service<br>
-</td>
-</tr>
-<tr>
-    <td style="text-align: center;" colspan="2">
+      </td>
+    </tr>
+    <tr>
+      <td><label for="role">Please specify your role: </label></td>
+      <td>
+        <input type="radio" name="role" id="admin" value="Admin">Admin <br>
+        <input type="radio" name="role" id="engineer" value="Engineer">Engineer<br>
+        <input type="radio" name="role" id="manager" value="Manager">Manager<br>
+        <input type="radio" name="role" id="guest" value="Guest">Guest
+      </td>
+    </tr>
+    <tr>
+      <td><label for="sign">Single Sign-on to the following: </label></td>
+      <td>
+        <input type="checkbox" name="sign1" id="mail" value="Mail">Mail<br>
+        <input type="checkbox" name="sign2" id="payroll" value="Payroll">Payroll<br>
+        <input type="checkbox" name="sign3" id="selfservice" value="Self-service">Self-service<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align: center;" colspan="2">
         <input type="submit" value="Login">
         <input type="button" value="Reset">
- </td>
-</tr>
-</table>
-
+      </td>
+    </tr>
+  </table>
+  </form>
 </body>
 </html>
